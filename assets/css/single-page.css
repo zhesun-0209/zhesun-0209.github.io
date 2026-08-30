@@ -1,0 +1,335 @@
+:root {
+  color-scheme: light;
+  --page-background: #ffffff;
+  --page-text: #464b52;
+  --page-heading: #20242a;
+  --page-muted: #747b84;
+  --page-accent: #2459a9;
+  --page-rule: #e8eaed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.single-page-body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page-background);
+  color: var(--page-text) !important;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+.single-page-shell {
+  width: min(100% - 48px, 1040px);
+  margin: 0 auto;
+  padding: 88px 0 72px;
+}
+
+.single-page-skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--page-heading);
+  color: #ffffff;
+  transform: translateY(-180%);
+}
+
+.single-page-skip-link:focus {
+  transform: translateY(0);
+}
+
+.single-page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 64px;
+  align-items: start;
+}
+
+.single-page-name {
+  margin: 0 0 6px;
+  color: var(--page-heading);
+  font-size: clamp(2.8rem, 7vw, 4.65rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.single-page-role {
+  margin: 0 0 30px;
+  color: var(--page-muted) !important;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.single-page-bio {
+  max-width: 740px;
+  margin: 0;
+  color: var(--page-text) !important;
+  font-size: 1.075rem;
+}
+
+.single-page-bio a,
+.single-page-publications a {
+  color: var(--page-accent);
+  text-decoration-color: color-mix(in srgb, var(--page-accent) 38%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.single-page-bio a:hover,
+.single-page-publications a:hover {
+  color: #173f7b;
+  text-decoration-color: currentcolor;
+}
+
+.single-page-profile {
+  width: 260px;
+  justify-self: end;
+}
+
+.single-page-portrait-frame {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #eef0f2;
+  box-shadow: 0 18px 44px rgb(18 30 45 / 12%);
+}
+
+.single-page-portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transform: scale(1.42);
+}
+
+.single-page-links {
+  display: grid;
+  gap: 0.55rem;
+  width: max-content;
+  margin: 20px auto 0;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.single-page-links a {
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  color: var(--page-text) !important;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.single-page-links a:hover {
+  color: var(--page-accent) !important;
+}
+
+.single-page-links i {
+  width: 1.35rem;
+  color: #4c5259;
+  font-size: 1.12rem;
+  text-align: center;
+}
+
+.single-page-links span {
+  color: inherit !important;
+}
+
+.single-page-publications,
+.single-page-section {
+  margin-top: 84px;
+  padding-top: 46px;
+  border-top: 1px solid var(--page-rule);
+}
+
+.single-page-section-title {
+  margin: 0 0 42px;
+  color: var(--page-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.single-page-year + .single-page-year {
+  margin-top: 48px;
+}
+
+.single-page-year-title {
+  margin: 0 0 18px;
+  color: var(--page-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.single-page-publication-list {
+  margin: 0;
+  padding-left: 1.55rem;
+  color: var(--page-text);
+}
+
+.single-page-publication-list li {
+  padding-left: 0.35rem;
+  color: var(--page-text) !important;
+}
+
+.single-page-publication-list li::marker {
+  color: #aeb4bc;
+}
+
+.single-page-publication-list li + li {
+  margin-top: 20px;
+}
+
+.single-page-publication-list strong {
+  color: var(--page-heading);
+  font-weight: 750;
+}
+
+.single-page-publication-title {
+  color: var(--page-heading);
+  font-weight: 600;
+}
+
+.single-page-education-list {
+  display: grid;
+  gap: 28px;
+}
+
+.single-page-education-item {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 34px;
+  align-items: baseline;
+}
+
+.single-page-education-item h3,
+.single-page-education-item p {
+  margin: 0;
+}
+
+.single-page-education-item h3 {
+  color: var(--page-heading);
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+
+.single-page-education-item p {
+  color: var(--page-text) !important;
+}
+
+.single-page-date {
+  color: var(--page-muted) !important;
+  font-size: 0.96rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.single-page-honors-list {
+  margin: 0;
+  padding-left: 1.55rem;
+  color: var(--page-text);
+}
+
+.single-page-honors-list li {
+  padding-left: 0.35rem;
+  color: var(--page-text) !important;
+}
+
+.single-page-honors-list li + li {
+  margin-top: 10px;
+}
+
+.single-page-honors-list li::marker {
+  color: #aeb4bc;
+}
+
+.single-page-honors-list strong {
+  color: var(--page-heading);
+  font-weight: 750;
+}
+
+.single-page-footer {
+  margin-top: 76px;
+  padding-top: 22px;
+  border-top: 1px solid var(--page-rule);
+  color: var(--page-muted) !important;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 720px) {
+  body.single-page-body {
+    font-size: 16px;
+  }
+
+  .single-page-shell {
+    width: min(100% - 36px, 1040px);
+    padding: 44px 0 48px;
+  }
+
+  .single-page-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .single-page-profile {
+    grid-row: 1;
+    width: 100%;
+    justify-self: start;
+  }
+
+  .single-page-portrait-frame {
+    width: 132px;
+    height: 132px;
+    margin: 0;
+  }
+
+  .single-page-links {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .single-page-name {
+    font-size: 3rem;
+  }
+
+  .single-page-role {
+    margin-bottom: 22px;
+  }
+
+  .single-page-publications {
+    margin-top: 56px;
+    padding-top: 34px;
+  }
+
+  .single-page-section {
+    margin-top: 56px;
+    padding-top: 34px;
+  }
+
+  .single-page-section-title {
+    margin-bottom: 30px;
+  }
+
+  .single-page-education-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

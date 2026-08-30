@@ -8,14 +8,14 @@ middle_name:
 last_name: Sun
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Zhe Sun, a master's student at Cornell University working on machine learning, renewable energy, and transportation systems.
+  Personal academic homepage of Zhe Sun, a Ph.D. student at Fudan University researching LLM and agent evaluation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Zhe Sun, Cornell University, machine learning, solar forecasting, renewable energy, transportation systems
+keywords: Zhe Sun, Fudan University, LLM evaluation, agent evaluation, AI4Science
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ☀️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: zhesun-avatar.png
+apple_touch_icon: zhesun-portrait.jpg
 
 url: https://zhesun.dev # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -93,12 +93,12 @@ al_folio:
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+navbar_fixed: false
 footer_fixed: false
-search_enabled: true
-socials_in_search: true
+search_enabled: false
+socials_in_search: false
 posts_in_search: false
-bib_search: true
+bib_search: false
 
 # Dimensions
 max_width: 960px
@@ -110,7 +110,7 @@ max_width: 960px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/zhesun-avatar.png # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/zhesun-portrait.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -141,7 +141,7 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -190,9 +190,9 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
