@@ -29,7 +29,7 @@ body.single-page-body {
 }
 
 .single-page-shell {
-  width: min(100% - 48px, 1040px);
+  width: min(100% - 48px, 1280px);
   margin: 0 auto;
   padding: 88px 0 72px;
 }
@@ -75,7 +75,7 @@ body.single-page-body {
 }
 
 .single-page-bio {
-  max-width: 740px;
+  max-width: 900px;
   margin: 0;
   color: var(--page-text) !important;
   font-size: 1.075rem;
@@ -280,7 +280,7 @@ body.single-page-body {
   }
 
   .single-page-shell {
-    width: min(100% - 36px, 1040px);
+    width: min(100% - 36px, 1280px);
     padding: 44px 0 48px;
   }
 
